@@ -1,0 +1,33 @@
+<div class="row">
+  <div class="col-md-2">
+    <label class="form-label">Nome</label>
+    <input
+      [(ngModel)]="name"
+      type="text"
+      name="form-name"
+      class="form-control"
+    />
+  </div>
+  <div class="col-md-2">
+    <label class="form-label">Sexo</label>
+    <select [(ngModel)]="sexo" class="form-select">
+      <option value="masc">Masculino</option>
+      <option value="femi">Feminino</option>
+    </select>
+  </div>
+  <div class="col-md-2">
+    <label class="form-label">Idade</label>
+    <input [(ngModel)]="age" class="form-control" />
+  </div>
+  <div class="col-md-2">
+    <label class="form-label">Valor do Automovel ($)</label>
+    <input [(ngModel)]="price" class="form-control" />
+  </div>
+  <div class="col-md-2">
+    <button class="btn btn-primary" (click)="calcular()">Calcular</button>
+  </div>
+  <div class="col-md-2">
+    <div class="form-label">Result</div>
+    <input [(ngModel)]="valueApolice" class="form-control" />
+  </div>
+</div>

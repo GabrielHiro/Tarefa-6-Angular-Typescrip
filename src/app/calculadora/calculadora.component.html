@@ -1,0 +1,26 @@
+<div class="row">
+  <div class="col-md-3">
+    <label class="form-label">num 1</label>
+    <input [(ngModel)]="num1" class="form-control" />
+  </div>
+  <div class="col-md-3">
+    <label class="form-label">num 2</label>
+    <input [(ngModel)]="num2" class="form-control" />
+  </div>
+  <div class="col-md-2">
+    <label class="form-label">Operaçao</label>
+    <select [(ngModel)]="operacao" class="form-select">
+      <option value="+">Somar</option>
+      <option value="-">Subtrair</option>
+      <option value="*">Multiplicar</option>
+      <option value="/">Dividir</option>
+    </select>
+  </div>
+  <div class="col-md-1">
+    <button class="btn btn-primary" (click)="calcular()">calcular</button>
+  </div>
+  <div class="col-md-3">
+    <label class="form-label">Resultado</label>
+    <input [(ngModel)]="resultado" class="form-control" />
+  </div>
+</div>

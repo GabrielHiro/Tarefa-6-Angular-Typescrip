@@ -1,0 +1,30 @@
+<div class="row">
+  <div class="col-md-2">
+    <label class="form-label">AC1</label>
+    <input [(ngModel)]="ac1" type="number" class="form-control" />
+  </div>
+  <div class="col-md-2">
+    <label class="form-label">AC2</label>
+    <input [(ngModel)]="ac2" type="number" class="form-control" />
+  </div>
+  <div class="col-md-2">
+    <label class="form-label">AG</label>
+    <input [(ngModel)]="ag" type="number" class="form-control" />
+  </div>
+  <div class="col-md-2">
+    <label class="form-label">AF</label>
+    <input [(ngModel)]="af" type="number" class="form-control" />
+  </div>
+  <div class="col-md-1">
+    <button class="btn btn-primary" (click)="calcular()">Calcular</button>
+  </div>
+  <div class="col-md-2">
+    <label class="form-label">Media Final</label>
+    <input
+      [(ngModel)]="mediaFinal"
+      type="number"
+      class="form-control"
+      [ngClass]="mediaFinalCSSClass"
+    />
+  </div>
+</div>
